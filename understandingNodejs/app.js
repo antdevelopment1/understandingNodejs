@@ -23,3 +23,23 @@ jane.greet();
 console.log(john.__proto__);
 console.log(jane.__proto__);
 console.log(john.__proto__ === jane.__proto__);
+
+// Pass by value
+function change(b) {
+  b = 2;
+}
+
+var a = 1;
+change(a);
+console.log(a);
+
+// Pass by reference
+function changeObj(d) {
+  d.prop1 = function() {};
+  d.prop2 = {};
+}
+
+var c = {};
+c.prop1 = {};
+changeObj(c);
+console.log(c);
