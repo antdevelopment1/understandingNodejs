@@ -43,3 +43,11 @@ var c = {};
 c.prop1 = {};
 changeObj(c);
 console.log(c);
+
+var firstname = "Jane";
+(function(lastname) {
+  let firstname = "John";
+  console.log(firstname);
+  console.log(lastname);
+})("Doe");
+console.log(firstname);
