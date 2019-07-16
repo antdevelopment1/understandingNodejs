@@ -18,3 +18,10 @@ greet();
 let greet4 = require("./greet4");
 let grtr = new greet4();
 grtr.greet();
+
+// Option 1
+// let greet5 = require("./greet5");
+// greet5.greet();
+// Option 2
+let greet5 = require("./greet5").greet;
+greet5();
