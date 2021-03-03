@@ -7,13 +7,13 @@ var enviornments = {};
 enviornments.staging = {
     'httpPort': 3000,
     'envName': 'staging'
-}
+};
 
 // Production Object
 enviornments.production = {
     'httpPort': 5000,
     'envName': 'production'
-}
+};
 
 // Determine what enviornemt was passed as the command line argument
 var currentEnv = typeof(process.env.NODE_ENV) == 'string' ? process.env.NODE_ENV.toLowerCase() : '';
